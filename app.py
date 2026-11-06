@@ -133,7 +133,7 @@ create_invoice(8515, order_data , directory)
 def send_email(invoice_num,name,email,date,directory):
     gmail_user = "standifird.taylor8@gmail.com"
     gmail_password_path = select_file('Please select the gmail password file')
-   gmail_password = open(gmail_password_path).read()
+    gmail_password = open(gmail_password_path).read()
 
 
     subject = f'Your Order from PythonTech Co. - Invoice {invoice_num}'
